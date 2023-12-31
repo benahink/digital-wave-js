@@ -15,6 +15,13 @@
   background: linear-gradient(to right, #29304c, #4c5270);
 }
 
+.navigation {
+  background: #4c5270;
+  border-radius: 25px;
+  padding: 5px 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
 nav {
   width: 80%;
   position: sticky;
@@ -30,23 +37,31 @@ nav {
 }
 
 .logo img {
-  width: 150px;
+  width: 100px;
 }
 
 .nav-links {
   flex: 1;
   text-align: right;
+  align-items: center;
 }
 
 .nav-links ul li {
   list-style: none;
   display: inline-block;
   margin: 0 20px;
+  font-weight: 700;
 }
 
 .nav-links ul li a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.bx-cart {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 900;
 }
 
 .hero {
@@ -133,23 +148,27 @@ nav {
 }
 
 #upBtn {
-  width: 15px;
+  width: 25px;
+  height: 25px;
   cursor: pointer; 
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
 }
 
 #downBtn {
-  width: 15px;
+  width: 25px;
+  height: 25px;
   cursor: pointer; 
   transform: rotate(180deg);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
 }
 
 .overlay {
   width: 0;
   height: 0;
   border-top: 500px solid #fff;
-  border-right: 500px solid red;
-  border-bottom: 500px solid pink;
-  border-left: 500px solid purple;
+  border-right: 500px solid transparent;
+  border-bottom: 500px solid #fff;
+  border-left: 500px solid #fff;
   position: absolute;
   top: 0;
   left: 0;
